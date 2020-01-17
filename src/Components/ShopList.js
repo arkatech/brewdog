@@ -13,8 +13,7 @@ class ShopList extends Component {
 
     getTotal() {
         let x = 0
-        this.props.Card.map(item => {
-
+        this.props.Card.foreach((item) => {
             x += item.abv * item.count
         })
         return x

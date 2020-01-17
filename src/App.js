@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Get_Beers} from "./Api";
 import AddProduct from "./Components/AddProduct";
@@ -28,7 +27,6 @@ class App extends Component {
 
     componentDidMount() {
         setTimeout(() => {
-            console.log(this.tabControl)
             this.setState(({
                 tabWidth: this.tabControl.firstChild.offsetWidth
             }));

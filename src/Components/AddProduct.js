@@ -43,7 +43,7 @@ class AddProduct extends Component {
                                 ( {this.state.CardData.description.length >= 50 ? this.state.CardData.description.substr(0, 50) + "..." : this.state.CardData.description} ) </p>
                             <p className="mb-0">food_Pairing ( {this.state.CardData.food_pairing.join(",")} )</p>
                         </div>
-                        <div className=""><img src={this.state.CardData.image_url} style={{width: "90%"}}/></div>
+                        <div className=""><img src={this.state.CardData.image_url} style={{width: "90%"}} alt={this.state.CardData.name}/></div>
                     </div>
                     <div className="p-1 d-flex justify-content-end">
 

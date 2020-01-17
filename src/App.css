@@ -1,0 +1,185 @@
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderTab {
+    background-color: #dd0001;
+}
+
+.HeaderTab {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabRow {
+    display: flex;
+}
+
+.tabRow div {
+    height: 100%;
+    flex: 1;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9;
+
+}
+.tabRow div img{
+    width: 30px;
+}
+.TabHover {
+    background-color: #2f2e30;;
+    position: absolute;
+    transition: All 0.6s;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    z-index: 1 !important;
+}
+
+.contentControl {
+    display: flex;
+    flex: 30;
+    transition: all .6s;
+    overflow: hidden;
+
+}
+
+.contentInto {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ControlRowChange {
+    transition: All 1s;
+}
+
+.contentIntoTabs {
+
+    color: white;
+    overflow: hidden;
+    height: 80vh;
+
+}
+
+.contentIntoTabsHeader {
+
+    background-color: #2f2e30;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contentIntoTabsHeader div {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    background-color: #2f2e30;
+    cursor: pointer;
+
+
+}
+
+.contentIntoTabsContent {
+    color: black;
+    height: 100%;
+    overflow: hidden;
+
+}
+.AddCard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+.AddCardBody{
+    background-color: #2f2e30;
+    color: white;
+    position: relative;
+    padding: 10px;
+    border-radius: 16px;
+}
+.AddCardBodyClose{
+    position: absolute;
+    background-color: #dd0001;
+    color: black;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px;
+    top: -40px;
+}
+.AddToCart{
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 3px 10px;
+}
+.shoplist{
+    height: 100%;
+    z-index: 1000;
+    background-color: #2f2e30;
+    width: 100%;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: fixed;
+    padding: 10px;
+    transition: all 1s;
+}
+.StyleforSelect{
+    display: flex;
+    margin-top: 5px;
+}
+.StyleforSelect span{
+    padding: 10px;
+    /*flex: 1;*/
+    color: black;
+    background-color: #f9b701;
+    white-space: nowrap;
+    margin: 1px;
+
+}
+.StyleforSelect span:first-child{
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.StyleforSelect span:last-child{
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.ProductContent{
+
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+.ProductContentBox{
+    border: 0.5px solid rgba(0, 0, 0, 0.62);
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+.btnAdd{
+    background-color: #f9b701;
+    color: black;
+    border-radius: 0 7px 7px 0;
+    padding: 0 6px;
+}
+.btnRemove{
+    background-color: #f9b701;
+    color: black;
+    border-radius: 7px 0px 0px 7px;
+    padding: 0 6px;
+}

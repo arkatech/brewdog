@@ -2,7 +2,7 @@ import axios from "axios";
 const superagent = require('superagent');
 
 
-URL = "https://api.punkapi.com/v2"
+URL = "https://api.punkapi.com/v2/"
 
 export const Get_Beers = (food) => {
 

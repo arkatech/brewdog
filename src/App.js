@@ -88,17 +88,19 @@ class App extends Component {
                     /* left swipe */
                     clearTimeout(this.controle)
                     this.controle = setTimeout(() => {
-                        if (this.state.tabInto === 0) {
-                            this.setState(({
-                                tabInto: 1
-                            }));
-                            return
-                        }
-                        if (this.state.tabInto === 1) {
-                            this.setState(({
-                                tabInto: 2
-                            }));
-                            return
+                        if (this.state.index===0) {
+                            if (this.state.tabInto === 0) {
+                                this.setState(({
+                                    tabInto: 1
+                                }));
+                                return
+                            }
+                            if (this.state.tabInto === 1) {
+                                this.setState(({
+                                    tabInto: 2
+                                }));
+                                return
+                            }
                         }
                     }, 100)
 
@@ -107,18 +109,21 @@ class App extends Component {
                     /* right swipe */
                     clearTimeout(this.controle)
                     this.controle = setTimeout(() => {
-                        if (this.state.tabInto === 1) {
-                            this.setState(({
-                                tabInto: 0
-                            }));
-                            return
+                        if (this.state.index===0){
+                            if (this.state.tabInto === 1) {
+                                this.setState(({
+                                    tabInto: 0
+                                }));
+                                return
+                            }
+                            if (this.state.tabInto === 2) {
+                                this.setState(({
+                                    tabInto: 1
+                                }));
+                                return
+                            }
                         }
-                        if (this.state.tabInto === 2) {
-                            this.setState(({
-                                tabInto: 1
-                            }));
-                            return
-                        }
+
                     }, 100)
                 }
             } else {
